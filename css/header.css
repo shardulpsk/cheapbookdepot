@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.header-mini{
+    padding: 0.4% 2% 2% 2%;
+    /* background-color: #36454F; */
+    color: #36454F;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.header-mini-left{
+    width: 50%;
+    float: left;
+}
+.header-mini-left i{
+    color: #99272D;
+}
+.header-mini-right{
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+.header-mini-right i{
+    color: green;
+    font-weight: bolder;
+}
+.sticky{
+    z-index: 1000;
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+    clear: both;
+}
+.header{
+    background-color: #99272D;
+    /* border: 1px solid yellowgreen; */
+    text-align: right;
+    padding: 0.4% 4% 0.3% 4%;
+    height: 75px;
+    /* background-color: #99272D; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../image/header.gif);
+    /* border-bottom: 3px solid #36454F; */
+    box-shadow: 0px 15px 10px -15px grey;  
+}
+.header img{
+    width: auto;
+    height: 65px;
+    float: left;
+    border-radius: 10px;
+    /* box-shadow: 2px 1px 4px 1px white; */
+}
+.header ul li{
+    display: inline;
+    border: 2px solid #99272D;
+    transition: 0.5s;
+    padding: 0.5% 1% 0.5% 1%;
+    margin: 0% 0.5% 0% 0.5%;
+}
+.header ul li:hover{
+    border-radius: 10px 0 30px 0;
+    /* box-shadow: 4px 0 4px 0 white; */
+    border-bottom: 2px solid #ffffff;
+    /* background-color: #ffffff; */
+}
+.header ul .act{
+    border-radius: 10px 0 30px 0;
+    /* box-shadow: 4px 0 4px 0 white; */
+    border-bottom: 2px solid #ffffff;
+    /* background-color: #ffffff; */
+}
+.header ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.header .contus{
+    border-radius: 10px 0 10px 0;
+    background-color: #ffffff;
+    color: #99272D;
+    /* border: 2px solid #ffffff; */
+}
+.header .contus a{
+    color: #99272D;
+}
+.header .line3{
+    display: none;
+}
+.brdr{
+    border: 1px solid yellowgreen;
+}
+.header .menus3{
+    padding-top: 16px;
+}
+
+.footer{
+    cursor: default;
+    background-color: #36454F;
+    /* background-image: url(../image/header.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    padding: 3% 5% 1% 5%;
+}
+.footer img{
+    width: 70%;
+    margin: 0 15% 0 15%;
+    border-radius: 10px;
+    box-shadow: 4px 0 30px 0 white;
+    animation: infinite 5s footimg;
+}
+@keyframes footimg {
+    0%{box-shadow: 4px 0 30px 0 white;};
+    50%{box-shadow: 4px 0 10px 0 white;};
+    100%{box-shadow: 4px 0 30px 0 white;};
+}
+.footer h5{
+    margin-bottom: 30px;
+}
+.copyr{
+    border-top: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    padding: 0.5% 0 0.5% 0;
+    margin: 0;
+    color: white;
+    background-color: #99272D;
+}
+.copyr p{
+    margin: 0;
+    padding: 0;
+}
+.copyr a{
+    text-decoration: none;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and  (max-width:800px){
+    .header-mini{
+        display: none;
+    }
+    .header{
+        /* border: 1px solid yellowgreen; */
+        height: auto;
+        padding: 8px;
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        border-top: 2px solid #36454F;
+        border-bottom: 2px solid #36454F;
+    }
+    .header img{
+        height: 40px;
+    }
+    .header .line3{
+        padding: 2%;
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .header .menus3{
+        display: none;
+        /* margin-top: 9px; */
+        width: 100%;
+        /* background-color: #99272D; */
+        /* border: 1px solid yellowgreen; */
+    }
+    .header .menus3 ul{
+        display: block;
+        /* border: 1px solid yellowgreen; */
+        padding: 0;
+        /* width: 100%; */
+
+        /* border: 1px solid yellowgreen; */
+    }
+    .header .menus3 ul li{
+        display: block;
+        width: 50%;
+        margin: 0% 25% 5% 25%;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .footer h5{
+        margin-top: 30px;
+    }
+}

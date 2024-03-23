@@ -1,0 +1,201 @@
+.marq marquee{
+    background-color: yellow;
+    /* color: white; */
+    border-bottom: 3px solid #36454F;
+    font-weight: bold;
+}
+.book-cat{
+    /* border: 1px solid yellowgreen; */
+    height: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 14%;
+    z-index: 999;
+    /* width: 99%; */
+    margin: 0.1% 0.1% 0 1%;
+    background-color: white;
+    /* color: white; */
+    /* border-radius: 0 0 20px 20px; */
+    text-align: center;
+}
+.book-cat  a{
+    text-decoration: none;
+    background-color: #36454F;
+    padding: 0.5% 0.6% 0.5% 0.6%;
+    border: 2px solid #36454F;
+    border-radius: 4px;
+    color: white;
+    transition: 0.3s;
+    text-align: center;
+}
+.book-cat  a:hover{
+    background-color: white;
+    /* padding: 0.5% 4% 0.5% 4%; */
+    border: 2px solid #36454F;
+    /* font-weight: bold; */
+    color: #36454F;
+}
+.law-books{
+    text-align: center;
+    margin-top: 2%;
+    background-color: white;
+}
+.law-books img{
+    width: 60%;
+    height: 150px;
+    margin: 0 15% 5% 15%;
+    transition: 0.5s;
+}
+.law-books img:hover{
+    /* box-shadow: 4px 0 100px 0 grey; */
+    /* width: 70%;
+    height: 173px; */
+    transform: scale(1.1);
+}
+.law-books img:hover .book-hed{
+    display: none;
+}
+.law-books .law-list{
+    padding: 4% 4% 4% 4%;
+    border-radius: 10px;
+    margin: 5% 0 10% 0;
+    border: 1px solid #d1d1d1;
+    transition: 0.3s;
+    height: 300px;
+    /* background-color: #ffd29f; */
+}
+.law-books .law-list:hover{
+    cursor: default;
+    /* border: 10px solid #808080; */
+    box-shadow: 2px 0 10px 0 grey;
+}
+.law-books .law-list button{
+    border: 0;
+    border: 1px solid #36454F;
+    background-color: #36454F;
+    color: white;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    padding: 1.5%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.law-books .law-list button:hover{
+    border: 1px solid #99272D;
+    background-color: white;
+    color: #99272D;
+}
+.book-all .law-list .book-price{
+    margin: 10px 0 10px 0;
+}
+.row .law-list h6{
+    /* border: 1px solid yellowgreen; */
+    line-height: 20px;
+    /* text-align: left; */
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+        white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.law-books h2{
+    text-align: left;
+    color: #36454F;
+    animation: 5s infinite bk;
+}
+@keyframes bk {
+    0%{color: #36454F;}
+    50%{color: #99272D;}
+    100%{color: #36454F;}
+}
+.law-list .book-hed{
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap; 
+    width: 100%; 
+    /* border: 1px solid yellowgreen; */
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.law-list .book-auth{
+    font-size: 14px;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.law-list .book-edition{
+    font-size: 14px;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: pellipsis; 
+}
+.underline{
+    border-radius: 40px 0 0 40px;
+    height: 5px;
+    background-image: linear-gradient(to right,#36454F, #99272D, white);
+    /* background-color: #36454F; */
+}
+.law-books .book-all{
+    height: auto;
+    overflow: auto;
+    /* border: 1px solid yellowgreen; */
+}
+.discount{
+    color: #99272D;
+}
+.side-bar{
+    display: none;
+}
+.wspace{
+    height: 100px;
+}
+@media screen and (max-width:800px) {
+    .wspace{
+        height: 50px;
+    }
+
+    .book-cat{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #36454F;
+        display: none;
+    }
+    .book-cat a{
+        padding: 3%;
+        border-radius: 0;
+        width: 100%;
+        display: block;
+        text-align: left;
+        /* background-color: #99272D; */
+    }
+    .side-bar{
+        background-color: #36454F;
+        color: white;
+        display: block;
+        top: 45%;
+        padding: 14px 0 14px 5px;
+        right: 0;
+        /* height: 10%; */
+        border-radius: 40px 0 0 40px;
+        /* position: -webkit-sticky; */
+        position: fixed;
+        width: 5%;
+        text-align: center;
+        /* margin: 0 40% 0 40%; */
+        font-size: 15px;
+        z-index: 1000;
+        background-color: #99272D;
+    }
+    .book-all .law-list{
+        height: auto;
+        overflow: unset;
+    }
+    .book-all .law-list img{
+        height: auto;
+    }
+}
